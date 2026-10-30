@@ -1,0 +1,16 @@
+{
+  "name": "ucv-postgres-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "database.hostname": "postgres",
+    "database.port": "5432",
+    "database.user": "ucv",
+    "database.password": "ucv123",
+    "database.dbname": "salesdb",
+    "topic.prefix": "ucv",
+    "plugin.name": "pgoutput",
+    "schema.include.list": "public",
+    "table.include.list": "public.sales",
+    "snapshot.mode": "initial"
+  }
+}
